@@ -1,1 +1,54 @@
 /* Place CSS styles here */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.outer-most-div {
+    min-height: 100vh;
+}
+
+.intro-image {
+    max-width: 300px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.centered {
+    text-align: center;
+}
+
+form {
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.form-element {
+    margin-bottom: 16px;
+}
+
+.form-element label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-element input,
+.form-element textarea {
+    display: block;
+    width: 100%;
+}

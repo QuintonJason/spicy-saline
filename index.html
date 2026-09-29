@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
+  <title>Spicy Saline</title>
+  <meta name="description" content="A site about saline solution">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -13,7 +13,7 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.png">
+  <link rel="icon" href="./img/drop.webp">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -24,7 +24,48 @@
 
 <body>
   <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 19</p>
+
+  <div class="outer-most-div">
+    <main>
+      <div class="intro">
+        <h1>Spicy Saline</h1>
+        <p>Welcome to Spicy Saline!</p>
+        <img class="intro-image" src="./img/giz2.jpg" alt="">
+        <p class="centered">
+          <a href="#form">Order now</a>
+        </p>
+        <a href="#">Order now</a>
+      </div>
+
+      <div>
+        <img src="./img/shot-drink-at-bar-close-up-photo.jpg" alt="">
+      </div>
+
+      <form id="form" action="./thank-you.html">
+        <div class="form-element">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-element">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-element">
+          <label for="message">Comment</label>
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <div class="empty"></div>
+
+    </main>
+  </div>
+
+
   <script src="js/main.js"></script>
 </body>
 
