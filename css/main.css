@@ -52,3 +52,7 @@ form {
     display: block;
     width: 100%;
 }
+
+.after-submission {
+    display: none;
+}
