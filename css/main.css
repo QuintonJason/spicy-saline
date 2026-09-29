@@ -55,4 +55,18 @@ form {
 
 .after-submission {
     display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: red;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.after-submission.show {
+    display: flex;
 }
