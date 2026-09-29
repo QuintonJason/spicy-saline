@@ -66,8 +66,8 @@
       <h2>JS form</h2>
       <form id="js-form">
         <div class="form-element">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <label for="name1">Name:</label>
+          <input type="text" id="name1" name="name1" required>
         </div>
 
         <div class="form-element">
@@ -113,11 +113,19 @@
         </label>
         <input type="checkbox" id="terms" name="terms" value="message">
 
+        <div>
+          <label class="chlabel" for="toggle">Toggle</label>
+
+          <input type="checkbox" id="toggle" class="visually-hidden">
+
+          <div class="control-me"></div>
+        </div>
+
         <input class="js-submit-button" type="submit" value="Submit">
       </form>
 
       <div class="after-submission">
-        <h1>Thank you!</h1>
+        <h1>Thank you<span class="username"></span>!</h1>
         <p>Thank you for your submission!</p>
         <button class="js-close-button">Close</button>
       </div>
