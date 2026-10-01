@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Clarity City", sans-serif;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -14,6 +18,51 @@ img {
 
 .outer-most-div {
     min-height: 100vh;
+}
+
+.saline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+@media (max-width: 480px) {
+    .saline-container {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .saline-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+.hero {
+    background-image: url(../img/night-sky.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.hero-title {
+    font-size: 40px;
+    text-shadow: 1px 1px 7px white;
 }
 
 .intro-image {
@@ -25,8 +74,69 @@ main {
     max-width: 1000px;
 }
 
+@media (max-width: 480px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 .centered {
     text-align: center;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content a {
+    margin-top: auto;
+    align-self: flex-start;
+    background-color: #A5D6A7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #81C784;
+    }
+}
+
+.hero-title-word {
+    text-transform: uppercase;
+}
+
+.hero-title-letter {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.hero-image {
+    max-width: 400px;
+}
+
+@media (max-width: 480px) {
+    .hero-image {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    .hero-image {
+        width: 400px; /* I gave up */
+    }
+}
+
+.hero-disclosure {
+    font-size: 2px;
 }
 
 form {
@@ -93,3 +203,4 @@ form {
 
     /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
 }
+
