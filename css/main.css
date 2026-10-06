@@ -9,6 +9,7 @@ html {
 
 body {
     font-family: "Clarity City", sans-serif;
+    background-color: #f0f8ff;
 }
 
 @media (max-width: 480px) {
@@ -104,11 +105,17 @@ main {
     flex-direction: column;
 }
 
-.hero-content a {
+.hero-content a,
+.featured-content-item a,
+.order-now-link,
+.form-submit-button,
+.thank-you-link {
     margin-top: auto;
     align-self: flex-start;
     background-color: #A5D6A7;
+    color: #111111;
     padding: 0.5rem 1rem;
+    border: 0;
     border-radius: 0.5rem;
     text-decoration: none;
 
@@ -229,3 +236,22 @@ form {
     }
 }
 
+.featured-content-item {
+    text-align: center;
+}
+
+.order-now-link {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-flex;
+}
+
+.promo {
+    /* if you need a background image */
+    background-image: url(../img/shot-drink-at-bar-close-up-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
