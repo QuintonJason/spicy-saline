@@ -11,6 +11,12 @@ body {
     font-family: "Clarity City", sans-serif;
 }
 
+@media (max-width: 480px) {
+    body {
+        font-size: 110%;
+    }
+}
+
 img {
     width: 100%;
     height: auto;
@@ -202,5 +208,24 @@ form {
     left: -100vw;
 
     /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+.featured-content-items {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 768px) {
+    .featured-content-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-content-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
