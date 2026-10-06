@@ -255,3 +255,9 @@ form {
     padding-top: 200px;
     padding-bottom: 200px;
 }
+
+.image-gallery {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
